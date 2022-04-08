@@ -56,15 +56,15 @@ class DetailsFragment : Fragment() {
     }
 
     private fun handleSuccess(details: Details) = with(binding) {
-        if(details.drinkDetails != null) {
-            tvName.text = details.drinkDetails[0].strDrink
-            tvCategory.text = details.drinkDetails[0].strCategory
-            tvAlcoholic.text = details.drinkDetails[0].strAlcoholic
-            tvGlass.text = details.drinkDetails[0].strGlass
-            tvIng1.text = details.drinkDetails[0].strIngredient1
-            tvIng2.text = details.drinkDetails[0].strIngredient2
-            tvIng3.text = details.drinkDetails[0].strIngredient3
-        }
+
+        tvName.text = details.drinks[0].strDrink
+        tvCategory.text = details.drinks[0].strCategory
+        tvAlcoholic.text = details.drinks[0].strAlcoholic
+        tvGlass.text = details.drinks[0].strGlass
+        tvIng1.text = details.drinks[0].strIngredient1
+        tvIng2.text = details.drinks[0].strIngredient2
+        tvIng3.text = details.drinks[0].strIngredient3
+
     }
 
     private fun handleError(error: String) {

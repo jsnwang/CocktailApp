@@ -53,7 +53,7 @@ class CocktailViewModel : ViewModel() {
             val state =
                 try { //state is set to success or fail depending on if the trycatch block fails or not
                     Log.d("viewmodel name", name)
-                    val details = CocktailModel.getDetails("Almond Joy")
+                    val details = CocktailModel.getDetails(name)
                     ViewState.SuccessDetails(details) //sets the viewstate to success and passes the movies as a parameter
                 } catch (ex: Exception) { //catches the try block if the getMovies call fails
                     ViewState.Error(
