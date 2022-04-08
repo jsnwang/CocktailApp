@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">CocktailApp</string>
+    <string name="_nodesc">No Description Available</string>
+    <string name="ingredients">Ingredients</string>
 </resources>
